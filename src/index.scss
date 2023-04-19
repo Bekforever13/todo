@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.auth-container {
+	@apply w-full min-h-screen bg-purple-400 flex items-center justify-center;
+
+	.auth-form {
+		@apply w-[500px] p-6 rounded-md shadow-md bg-white flex flex-col gap-4;
+
+		h1 {
+			@apply text-3xl font-semibold text-slate-700 text-center;
+		}
+
+		input {
+			@apply px-5 py-3 rounded-md border-slate-400;
+		}
+
+		button {
+			@apply px-5 py-3 rounded-md shadow-md bg-indigo-500 text-white text-xl transition duration-200 hover:bg-indigo-600 active:scale-90 active:opacity-70;
+		}
+	}
+}
