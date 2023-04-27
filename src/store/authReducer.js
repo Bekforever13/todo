@@ -13,6 +13,12 @@ export const authReducer = (state = initialState, action) => {
 				token: action.payload.token,
 				isLogged: true,
 			}
+		case 'ADD_TODO':
+			return {
+				...state,
+				task: action.payload,
+				description: action.payload,
+			}
 		default: {
 			return 'asdasdasd'
 		}

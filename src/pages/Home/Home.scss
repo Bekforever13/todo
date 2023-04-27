@@ -1,0 +1,28 @@
+form {
+	@apply bg-indigo-500 flex items-center flex-col justify-center h-screen w-full  overflow-hidden;
+
+	h1 {
+		@apply w-full text-center text-3xl font-semibold text-white py-4;
+	}
+
+	div {
+		@apply flex items-center w-full px-[300px] py-3 gap-x-3;
+
+		input {
+			@apply rounded-md px-4 py-2 outline-none w-full text-lg;
+		}
+		button {
+			@apply bg-teal-300 py-2 px-4 rounded-md shadow-md hover:opacity-90 active:scale-95 transition duration-100;
+		}
+	}
+}
+ul {
+	@apply flex flex-col w-[750px] px-[300px] gap-y-4;
+
+	li {
+		@apply border-b-2 border-dashed border-black text-white text-lg flex justify-between items-center;
+		span {
+			@apply flex fill-gray-100 gap-x-3;
+		}
+	}
+}
